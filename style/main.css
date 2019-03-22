@@ -1,0 +1,161 @@
+/**************** GENERAL ***************/
+
+body {
+    background-color: transparent;
+}
+
+html {
+    font-family: 'Lato', sans-serif;
+    background-color: transparent;
+    font-size: 16px;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Signika', sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+a {
+    color: #fff;
+}
+
+a:hover {
+    color: #fff;
+    text-decoration: underline !important;
+}
+
+i {
+    padding-left: 30px;
+}
+
+.info {
+    text-align: center;
+}
+
+.info-logout {
+    font-size: 30px;
+    color: orange;
+}
+
+
+/**************HEADER****************/
+
+.jumbotron {
+    text-align: center;
+    background-color: #007bff;
+}
+
+.container-color {
+    background-color: #e1f5fe;
+}
+
+nav {
+    float: left;
+}
+
+
+/******************* FORM *******************/
+
+.form-signin {
+    width: 100%;
+    max-width: 330px;
+    padding: 15px;
+    margin: auto;
+}
+
+.form-signin .checkbox {
+    font-weight: 400;
+}
+
+.form-signin .form-control {
+    position: relative;
+    box-sizing: border-box;
+    height: auto;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.form-signin .form-control:focus {
+    z-index: 2;
+}
+
+.form-signin input[type="email"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+
+/*************** CARD PROFIL ***************/
+
+.card {
+    padding: 20px;
+    display: inline-block;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .15);
+}
+
+.card-header {
+    background-color: #17a2b8;
+    text-align: center;
+}
+
+.list-group-item {
+    padding: 30px;
+}
+
+
+/************* FOOTER ********************/
+
+footer {
+    background-color: #17a2b8;
+    margin-top: 50px;
+}
+
+.nav-footer a {
+    color: grey;
+}
+
+
+/********* MESSAGE LOGIN **********/
+
+#error {
+    background-color: red;
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+
+#success {
+    background-color: green;
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+
+
+/************* CHANGE THEME JS **************/
+
+.bg-green {
+    background-color: #e8f5e9;
+}
+
+.green {
+    background-color: forestgreen;
+}
+
+.btn-green {
+    background-color: forestgreen;
+}
+
+.font-title {
+    font-family: 'Dancing Script', cursive;
+}
