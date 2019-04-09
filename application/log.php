@@ -1,4 +1,6 @@
 <?php
+/***********************Login*****************************/
+
 if(isset($_POST['connect'])){
     if(isset($_POST['email']) AND isset($_POST['password'])){
         if(!empty($_POST['email']) AND !empty($_POST['password'])){

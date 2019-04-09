@@ -13,7 +13,7 @@ require 'application/log.php';
                 <a class="nav-link" href="index.php">Accueil</a>
             </li>
         </ul>
-    </nav>  
+    </nav>
     <h1 class="display-4">Connexion</h1>
 </header>
 
@@ -26,10 +26,13 @@ require 'application/log.php';
             <input type="password"  name="password" class="form-control" placeholder="Mot de passe" required>
             <button class="btn btn-lg btn-primary btn-block" type="submit" name="connect">Connexion</button>
         </form>
-        <?php if(isset($error)) {echo $error;} ?>
-        </div> 
-<?php 
-    require ('include\footer.php'); 
+    </div>
+    <?php
+      if(isset($error)){
+          echo $error;
+      }
+    ?>
+<?php
+    require ('include\footer.php');
 ?>
 </div>
-    

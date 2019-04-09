@@ -32,23 +32,21 @@ require 'application/user.php';
             </div>
                <ul class="list-group list-group-flush">
                   <li class="list-group-item">Pseudo: <?= $user['pseudo'] ?></li>
-                  <li class="list-group-item">Ville: <?= $user['city'] ?></li>
+                  <li class="list-group-item">Ville: <?= $user['city']; ?></li>
                   <li class="list-group-item">Email: <?= $user['email']; ?></li>
                   <li class="list-group-item">Date d'inscription: <?= $newDate ?></li>
                </ul>
 
-<?php 
-if(isset($error)) {echo $error;} 
+<?php
+  if(isset($error)){
+    echo $error;
+  }
 ?>
       </div>
-   </div> 
+   </div>
 </div>
 
 
-<?php  
-require ('include/footer.php'); 
+<?php
+require ('include/footer.php');
 ?>
-      
-
-      
-

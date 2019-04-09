@@ -12,11 +12,11 @@ require 'application/reg.php';
         <p class="info">Bienvenue sur mon site, pour en voir plus inscrivez-vous!
             Sinon<a class="nav-link" href="login.php">connectez-vous </a></p>
     </div>
-    <button class="btn btn-secondary" id="change">Changer de theme</button>
+    <button class="btn btn-secondary" id="change">Changer de thème</button>
 </header>
     <div class="container container-color" id="bg">
         <div class ="d-flex justify-content-center">
-    
+
         <form action="index.php" method="post" class="form-signin">
             <label for="pseudo" class="sr-only">Pseudo</label>
             <input type="text"  name= "pseudo" class="form-control" placeholder="Pseudo" required autofocus>
@@ -37,11 +37,14 @@ require 'application/reg.php';
             <button id="btn" name="inscription" class="btn btn-lg btn-primary btn-block" type="submit">Je m'inscris</button>
         </form>
 
-<?php if(isset($error)) { echo $error; } ?>
+<?php
+  if(isset($error)){
+    echo $error;
+  } 
+?>
         </div>
     </div>
 
 <?php require ('include\footer.php'); ?>
 
-    <script src = "script/script.js"></script>
-    
+  <script src = "script/script.js"></script>
