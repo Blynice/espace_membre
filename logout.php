@@ -2,6 +2,7 @@
 session_start();
 require 'include/header.php';
 session_destroy();
+echo "Vous êtes déconnecté"
 ?>
 
 
@@ -12,9 +13,8 @@ session_destroy();
         <a class="nav-link" href="index.php">Accueil</a>
     </li>
     </ul>
-</nav>  
-<h1 class="display-4">Deconnexion</h1>
-    <p class="info-logout">Vous êtes deconnectez.</p> 
+</nav>
+<h1 class="display-4">Déconnexion</h1>
     <p>Se connecter à nouveau</p>
 </header>
     <form action="login.php" method="POST" class="form-signin">
@@ -24,6 +24,6 @@ session_destroy();
         <input type="password"  name="password" class="form-control" placeholder="Mot de passe" required>
         <button class="btn btn-lg btn-primary btn-block" type="submit" name="connect">Connexion</button>
     </form>
-<?php 
-    require 'include/footer.php'; 
+<?php
+    require 'include/footer.php';
 ?>
