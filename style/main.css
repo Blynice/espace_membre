@@ -1,7 +1,7 @@
 /**************** GENERAL ***************/
 
 body {
-    background-color: transparent;
+    background-color: #e3f2fd;
 }
 
 html {
@@ -12,49 +12,46 @@ html {
 
 h1,
 h2,
-h3 {
+h3,
+h4,
+h5 {
     font-family: 'Signika', sans-serif;
     text-transform: uppercase;
     color: #fff;
 }
 
-a {
-    color: #fff;
+a.nav-link {
+    color: #2E2E37;
+    padding: 10px;
+    margin: 5px;
+    font-size: 18px;
 }
 
 a:hover {
-    color: #fff;
+    background-color: #fff;
     text-decoration: underline !important;
+}
+
+ul{
+  list-style-type: none;
 }
 
 i {
     padding-left: 30px;
 }
-
-.info {
-    text-align: center;
+img{
+  margin: 10px;
 }
-
-.info-logout {
-    font-size: 30px;
-    color: orange;
-}
-
-
-/********************* HEADER *******************/
+/**************HEADER****************/
 
 .jumbotron {
     text-align: center;
-    background-color: #007bff;
 }
 
 .container-color {
     background-color: #e1f5fe;
 }
 
-nav {
-    float: left;
-}
 
 
 /******************* FORM *******************/
@@ -99,8 +96,9 @@ nav {
 
 .card {
     padding: 20px;
-    display: inline-block;
+    margin: 20px;
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .15);
+    font-family: 'Lato', sans-serif;
 }
 
 .card-header {
@@ -109,53 +107,207 @@ nav {
 }
 
 .list-group-item {
-    padding: 30px;
+    border: none;
+}
+/****************** CARD USER MODIF ********************/
+.nav-tabs{
+  padding-bottom: 5px;
 }
 
-
-/************* FOOTER ********************/
+.card-modif{
+  background-color: transparent;
+}
+.title-modif{
+  color: #2E2E37;
+}
+/****************** FOOTER ********************/
 
 footer {
-    background-color: #17a2b8;
-    margin-top: 50px;
+    padding: 10px;
+    margin: 10px;
 }
 
-.nav-footer a {
-    color: grey;
+/********************** MESSAGE *****************/
+.error{
+  color: red;
+  font-weight: bold;
+  text-align: center;
 }
 
-
-/********* MESSAGE LOGIN **********/
-
-#error {
-    background-color: red;
-    color: white;
-    text-align: center;
-    padding: 5px;
+/************************* CHANGE INFO PAGE *******************/
+.info-user-title{
+  color: #2E2E37;
 }
-
-#success {
-    background-color: green;
-    color: white;
-    text-align: center;
-    padding: 5px;
-}
-
-
-/************* CHANGE THEME JS **************/
+/************* CHANGE THEME JS HOME **************/
 
 .bg-green {
     background-color: #e8f5e9;
 }
 
 .green {
-    background-color: forestgreen;
+    background-color: forestgreen!important;
 }
 
 .btn-green {
     background-color: forestgreen;
+    border-color: forestgreen;
 }
 
-.font-title {
+.font-change {
     font-family: 'Dancing Script', cursive;
+}
+
+
+/*********************** THEME: PROFIL ************************/
+
+input[type="button"]{
+    border-style: none;
+}
+button:focus {
+    outline: none;
+}
+
+
+.butn_nature{
+    display: inline-block;
+    margin: 20px;
+    padding: 20px;
+    width: 20px;
+    height: 20px;
+    background-color: #8FAE92;
+    border-radius: 50%;
+}
+
+.butn_nature:hover{
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .20);
+}
+
+.butn_rubble{
+    display: inline-block;
+    margin: 20px;
+    padding: 20px;
+    width: 20px;
+    height: 20px;
+    background-color: #f6e423;
+    border-radius: 50%;
+}
+
+
+.butn_rubble:hover{
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .20);
+}
+.butn_PJmask{
+    display: inline-block;
+    margin: 20px;
+    padding: 20px;
+    width: 20px;
+    height: 20px;
+    background-color: #e44f66;
+    border-radius: 50%;
+}
+
+
+.butn_PJmask:hover{
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .20);
+}
+.butn_night{
+    margin: 20px;
+    padding: 20px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: #1F4788;
+    border-radius: 50%;
+}
+.butn_night:hover{
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .20);
+}
+
+.bg_none{
+  background-color: transparent;
+}
+/******************THEME NATURE ****************/
+
+.font_nature {
+    font-family: 'Mali', cursive;
+    background-color: #8FAE92!important;
+}
+
+.bg_nature{
+    background-image: url('../img/nature.jpg');
+    background-size: cover;
+}
+
+.jumbotron_nature{
+    background-color: #8FAE92!important;
+    margin: 0;
+}
+.footer_nature{
+    background-color: #8FAE92!important;
+    font-family: 'Mali', cursive;
+}
+
+/***************** THEME RUBBLE ******************/
+.font_rubble {
+    font-family: 'PT Mono', monospace;
+    background-color: #f6e423!important;
+    color: #2E2E37;
+}
+
+.bg_rubble{
+    background-image: url('../img/rubble.jpg');
+    background-size: cover;
+}
+
+.jumbotron_rubble{
+    background-color: #f6e423!important;
+    margin: 0;
+}
+
+.footer_rubble{
+  background-color: #f6e423!important;
+  font-family: 'PT Mono', monospace;
+}
+
+/***************** THEME PYJAMASK ******************/
+.font_PJmask {
+    font-family: 'Bowlby One SC', cursive;
+      background-color: #e44f66!important;
+    color: #2E2E37;
+}
+
+.bg_PJmask{
+    background-image: url('../img/pjmask.jpg');
+    background-size: cover;
+}
+
+.jumbotron_PJmask{
+    background-color: #e44f66!important;
+    margin: 0;
+}
+
+.footer_PJmask{
+  background-color: #e44f66!important;
+  font-family: 'Bowlby One SC', cursive;
+}
+/*********************** THEME NIGHT *******************/
+
+.font_night {
+    font-family: 'Rock Salt', cursive;
+    background: #4568DC;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #B06AB3, #4568DC);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #B06AB3, #4568DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #2E2E37;
+}
+
+.bg_night{
+    background-image: url('../img/night.jpg');
+    background-size: cover;
+}
+
+.jumbotron_night{
+background: #4568DC;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #B06AB3, #4568DC);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #B06AB3, #4568DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+margin: 0;
 }
