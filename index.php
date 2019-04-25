@@ -3,14 +3,13 @@ session_start();
 require 'include/header.php';
 require 'application/reg.php';
 ?>
-
-
-<header id = "jumbotron" class="jumbotron jumbotron-fluid">
+ <header id = "jumbotron" class="jumbotron bg-primary jumbotron-fluid">
 
     <div class="container">
         <h1 id="font" class="display-4">Inscription</h1>
         <p class="info">Bienvenue sur mon site, pour en voir plus inscrivez-vous!
-            Sinon<a class="nav-link" href="login.php">connectez-vous </a></p>
+            Sinon <a class="nav-link" href="login.php">connectez-vous </a>
+        </p>
     </div>
     <button class="btn btn-secondary" id="change">Changer de thème</button>
 </header>
@@ -39,12 +38,11 @@ require 'application/reg.php';
 
 <?php
   if(isset($error)){
-    echo $error;
-  } 
+      echo '<div class="error text-center">', $error, '</div>';  }
 ?>
         </div>
     </div>
 
-<?php require ('include\footer.php'); ?>
+<?php require 'include/footer.php'; ?>
 
   <script src = "script/script.js"></script>

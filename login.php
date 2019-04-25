@@ -6,7 +6,7 @@ require 'application/log.php';
 
 
 
-<header class="jumbotron jumbotron-fluid">
+<header class="jumbotron jumbotron-fluid bg-primary">
     <nav>
         <ul class="nav flex-column">
             <li class="nav-item">
@@ -29,10 +29,10 @@ require 'application/log.php';
     </div>
     <?php
       if(isset($error)){
-          echo $error;
-      }
+          echo '<div class="error text-center">', $error, '</div>';  }
     ?>
+
 <?php
-    require ('include\footer.php');
+    require 'include/footer.php';
 ?>
 </div>
