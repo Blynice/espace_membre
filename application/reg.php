@@ -27,7 +27,6 @@ if(isset($_POST['inscription'])){
                                 //insertion des valeurs dans la bdd
                                 $req = $db->prepare("INSERT INTO users (pseudo, city, email, password) VALUES (?,?,?,?)");
                                 $req->execute(array($pseudo, $city, $email, $password_crypt));
-                                echo "Votre compte a été crée";
                                 header('location: login.php');
 
                             }else{

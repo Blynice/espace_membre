@@ -1,6 +1,5 @@
 <?php
 /***********************Login*****************************/
-
 if(isset($_POST['connect'])){
     if(isset($_POST['email']) AND isset($_POST['password'])){
         if(!empty($_POST['email']) AND !empty($_POST['password'])){
@@ -16,13 +15,14 @@ if(isset($_POST['connect'])){
 
                 $user = $req->fetch();
                 $_SESSION['user'] = $user;
+                echo "Votre compte a été crée";
 
                 header('location: profil.php');
                 exit();
 
-        }else{
-            $error = "Nom d'utilisateur ou mot de passe incorrect";
-        }
+            }else{
+                $error = "Nom d'utilisateur ou mot de passe incorrect";
+            }
         }
     }else{
         $error = "ERREUR";
