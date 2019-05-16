@@ -240,7 +240,9 @@ button:focus {
     background-image: url('../img/nature.jpg');
     background-size: cover;
 }
-
+.colorHeaderNature{
+  background-color: #8fae92;
+}
 .jumbotron_nature{
     background-color: #8FAE92!important;
     margin: 0;
@@ -261,7 +263,9 @@ button:focus {
     background-image: url('../img/rubble.jpg');
     background-size: cover;
 }
-
+.colorHeaderRubble{
+  background-color: #f6e423;
+}
 .jumbotron_rubble{
     background-color: #f6e423!important;
     margin: 0;
@@ -283,7 +287,9 @@ button:focus {
     background-image: url('../img/pjmask.jpg');
     background-size: cover;
 }
-
+.colorHeaderPJmask{
+  background-color: #e44f66;
+}
 .jumbotron_PJmask{
     background-color: #e44f66!important;
     margin: 0;
@@ -307,7 +313,11 @@ button:focus {
     background-image: url('../img/night.jpg');
     background-size: cover;
 }
-
+.colorHeaderNight{
+  background: #4568DC;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #B06AB3, #4568DC);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #B06AB3, #4568DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
 .jumbotron_night{
 background: #4568DC;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to right, #B06AB3, #4568DC);  /* Chrome 10-25, Safari 5.1-6 */
