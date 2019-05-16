@@ -9,6 +9,7 @@ var fontHeaderNature;
 var fontTitleNature;
 var fontProfilNature;
 var bgCardNature;
+var colorCardHeaderNature;
 var footerProfilNature;
 
 bgNature = document.getElementById('bgProfilTheme');
@@ -17,6 +18,7 @@ fontHeaderNature = document.getElementById('headerTitleTheme');
 fontTitleNature = document.getElementById('titleCardTheme');
 fontProfilNature = document.getElementById('fontProfilTheme');
 bgCardNature = document.getElementById('cardBgTheme');
+colorCardHeaderNature = document.getElementById('colorHeaderTheme');
 footerProfilNature = document.getElementById('footerTheme');
 
 
@@ -29,6 +31,7 @@ function themeNature() {
     fontTitleNature.classList.toggle('font_nature');
     fontProfilNature.classList.toggle('font_nature');
     bgCardNature.classList.toggle('bg_none');
+    colorCardHeaderNature.classList.toggle('colorHeaderNature');
     footerProfilNature.classList.toggle('footer_nature');
 };
 
@@ -43,6 +46,7 @@ var fontHeaderRubble;
 var fontTitleRubble;
 var fontProfilRubble;
 var bgCardRubble;
+var colorCardHeaderRubble;
 var footerProfilRubble;
 
 bgRubble = document.getElementById('bgProfilTheme');
@@ -51,6 +55,7 @@ fontHeaderRubble = document.getElementById('headerTitleTheme');
 fontTitleRubble = document.getElementById('titleCardTheme');
 fontProfilRubble = document.getElementById('fontProfilTheme');
 bgCardRubble = document.getElementById('cardBgTheme');
+colorCardHeaderRubble = document.getElementById('colorHeaderTheme');
 footerProfilRubble = document.getElementById('footerTheme');
 
 
@@ -63,6 +68,7 @@ function themeRubble() {
     fontTitleRubble.classList.toggle('font_rubble');
     fontProfilRubble.classList.toggle('font_rubble');
     bgCardRubble.classList.toggle('bg_none');
+    colorCardHeaderRubble.classList.toggle('colorHeaderRubble');
     footerProfilRubble.classList.toggle('footer_rubble');
 };
 
@@ -76,6 +82,7 @@ var fontHeaderPJmask;
 var fontTitlePJmask;
 var fontProfilPJmask;
 var bgCardPJmask;
+var colorCardHeaderPJmask;
 var footerProfilPJmask;
 
 bgPJmask = document.getElementById('bgProfilTheme');
@@ -84,6 +91,7 @@ fontHeaderPJmask = document.getElementById('headerTitleTheme');
 fontTitlePJmask = document.getElementById('titleCardTheme');
 fontProfilPJmask = document.getElementById('fontProfilTheme');
 bgCardPJmask = document.getElementById('cardBgTheme');
+colorCardHeaderPJmask = document.getElementById('colorHeaderTheme');
 footerProfilPJmask = document.getElementById('footerTheme');
 
 
@@ -96,6 +104,7 @@ function themePJmask() {
     fontTitlePJmask.classList.toggle('font_PJmask');
     fontProfilPJmask.classList.toggle('font_PJmask');
     bgCardPJmask.classList.toggle('bg_none');
+    colorCardHeaderPJmask.classList.toggle('colorHeaderPJmask');
     footerProfilPJmask.classList.toggle('footer_PJmask');
 };
 
@@ -110,7 +119,8 @@ var bgNight;
 var jumbotronNight;
 var fontHeaderNight;
 var fontTitleNight;
-var bgCardPJmask;
+var bgCardNight;
+var colorCardHeaderNight;
 var fontProfilNight;
 
 bgNight = document.getElementById('bgProfilTheme');
@@ -118,6 +128,7 @@ jumbotronNight = document.getElementById('jumbotronTheme');
 fontHeaderNight = document.getElementById('headerTitleTheme');
 fontTitleNight = document.getElementById('titleCardTheme');
 bgCardNight = document.getElementById('cardBgTheme');
+colorCardHeaderNight = document.getElementById('colorHeaderTheme');
 fontProfilNight = document.getElementById('fontProfilTheme');
 
 
@@ -129,6 +140,7 @@ function themeNight() {
     fontHeaderNight.classList.toggle('font_night');
     fontTitleNight.classList.toggle('font_night');
     bgCardNight.classList.toggle('bg_none');
+    colorCardHeaderNight.classList.toggle('colorHeaderNight');
     fontProfilNight.classList.toggle('font_night');
 };
 
