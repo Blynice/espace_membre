@@ -37,9 +37,6 @@ require 'application/user.php';
       <li class="nav-item">
         <a class="nav-link active" href="#">Changer de thème</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="infoModif.php">Modifier mes informations</a>
-      </li>
     </ul>
   </div>
   <div class="card-body">
@@ -59,7 +56,7 @@ require 'application/user.php';
 <div class="row">
   <div class="col-sm">
     <div class="card" style="width: 18rem;">
-      <h5 class="card-header">Paramètres</h5>
+      <h5 id="colorHeaderTheme" class="card-header">Paramètres</h5>
       <ul class="list-group list-group-flush">
         <li><a class="nav-link" href="index.php">Modifier mes informations</a></li>
         <li><a class="nav-link" href="logout.php">Me déconnecter</a></li>
@@ -73,6 +70,10 @@ require 'application/user.php';
 <?php
 if(isset($error)){
   echo $error;
+}elseif(isset($success)){
+  echo $success;
+}else{
+
 }
 ?>
 <footer id= "footerTheme" class="nav-footer">
