@@ -8,7 +8,8 @@ $user = $_SESSION['user'];
 $origDate = $user['creation_date'];
 $newDate = date("d-m-Y", strtotime($origDate));
 
-if(isset($_GET['user'])) {
+if(isset($_GET['user'])) 
+{
     $id = htmlspecialchars($_GET['user']);
 
     $req = $db->prepare("SELECT * FROM users WHERE id = ?");
@@ -21,3 +22,5 @@ if(isset($_GET['user'])) {
         $error = 'Utilisateur introuvable';
     }
 }
+
+$user->closeCursor();

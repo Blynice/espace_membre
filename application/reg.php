@@ -29,6 +29,7 @@ if(isset($_POST['inscription'])){
                                 $req->execute(array($pseudo, $city, $email, $password_crypt));
                                 header('location: login.php');
 
+
                             }else{
                                 $error = "Vos mot de passe ne correspondent pas";
                             }
@@ -50,6 +51,8 @@ if(isset($_POST['inscription'])){
         }else{
             $error = "Veuillez remplir tous les champs";
         }
+    }else{
+      $success = "Votre compte a été crée";
     }
 }
 
